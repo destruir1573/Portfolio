@@ -1,0 +1,229 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #1f1e1e;
+    color: white;
+    font-family: comum;
+}
+
+@font-face {
+    font-family: comum;
+    src: url("fontes/CartoonCheck-Black.ttf") format('truetype');
+}
+
+font-face {
+    font-family: plans;
+    src: url("fontes/Plans.ttf") format('truetype');
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Animação para o efeito de piscar o cursor */
+@keyframes blink-cursor {
+    50% { border-color: transparent; }
+}
+
+/*@keyframes push-scroll{
+
+    0%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+
+    
+
+    70%{
+        opacity: 1;
+        transform: translateY(0px)
+    }
+
+    100%{
+        opacity: 0;
+        
+        transform: translateY(-150px)
+    }
+
+}
+*/
+@keyframes spin{
+    0%{
+        border: 1px solid;
+        filter: drop-shadow(0px 1px 5px whitesmoke);
+    }
+    25%{
+        border: 0px solid;
+        filter: drop-shadow(0px 1px 5px #000000);
+    }
+
+    50%{
+        border: 1px solid;
+        filter: drop-shadow(0px 1px 5px whitesmoke);
+    }
+
+    75%{
+        border: 1px solid;
+        filter: drop-shadow(0px 1px 5px #000000);
+    }
+
+    100%{
+        border: 0px solid;
+        filter: drop-shadow(0px 1px 5px whitesmoke);
+    }
+
+}
+
+@keyframes FadeOut{
+    0%{
+        opacity: 1;
+        transform: scale(0.1);
+        transform: translateY(20px);
+    }
+
+    50%{
+        transform: scale(1);
+        opacity: 1;
+        transform: translateY(10px);
+    }
+
+    100%{
+        opacity: 0;
+        transform: translateY(0px);
+    }
+
+
+
+}
+
+
+
+/*parte do topo do site, mimha apresentaçao*/
+
+.topo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+   
+    
+}
+
+.apresentacao{
+    
+    flex-wrap: wrap;
+    gap: 10px;
+    animation: push-scroll linear;
+    /*animation-timeline: view();*/
+    visibility: hidden;
+    
+    
+}
+
+
+.break {
+    flex-basis: 100%; 
+    height: 0; 
+}
+
+.kadu{
+    color: #121c4b; 
+    background-color: aliceblue;
+    width: 350px; 
+    height: 40px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+    
+}
+
+.animacao-topo-front{
+    margin-top: 1px;
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    animation: spin 6s linear infinite;
+}
+
+a{
+    text-decoration: none;
+}
+
+.links-redes{
+    width: 200px;
+    height: 80px;
+    
+}
+
+.links-redes a img{
+    border: 3px solid black;
+    filter: drop-shadow(0px 1px 5px white);
+    background-color: white;
+    border-radius: 10px;
+    margin: 10px;
+    width: 50px;
+    transition: transform 0.5s ease-in-out;
+}
+
+.links-redes a img:hover{
+   transform: scale(1.1);
+}
+
+/*fim topo do site*/
+
+/*boas vindas*/
+
+.boas-vindas{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+   
+    
+}
+
+.oi{
+    
+    visibility: hidden;
+    width: 50%;
+    height: 70px;
+   /* background-color: #121c4b;
+    */
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*filter: drop-shadow(0px 0px 1px white);
+    animation: spin 6s linear infinite
+   /*animation: FadeOut linear;
+    animation-timeline: view();*/
+ 
+}
+
+.portfolio{
+    color: #121c4b;
+    filter: drop-shadow(1px 1px 5px black);
+    background-color: antiquewhite;
+    text-align: center;
+    border-radius: 5px;
+    margin-left: 5px;
+    padding-top: 5px;
+    padding-right: 5px;
+    /*display: flex;
+    justify-content: center;
+    align-items: center;
+    */
+}
+
+
+
